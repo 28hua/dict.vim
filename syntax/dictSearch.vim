@@ -1,10 +1,12 @@
 syn match DictSearchFlag     #_\*_DictSearch\(\(Start\)\|\(End\)\)_\*_# conceal
+syn match DictSearchFlag     #_\*_DictPhonetic\(\(Start\)\|\(End\)\)_\*_# conceal
 syn match DictSearchFlag     #_\*_DictResult\(\(Start\)\|\(End\)\)_\*_# conceal
 syn match DictSearchFlag     #_\*_DictNoun\(\(Start\)\|\(End\)\)_\*_#   conceal
 syn match DictSearchFlag     #_\*_DictWeb\(\(Start\)\|\(End\)\)_\*_#    conceal
 
 syn match DictWTitle         #^.\{2}：#
 syn match DictSearch         #\(_\*_DictSearchStart_\*_\)\@<=.*\(_\*_DictSearchEnd_\*_\)\@=#
+syn match DictPhonetic       #\(_\*_DictPhoneticStart_\*_\)\@<=.*\(_\*_DictPhoneticEnd_\*_\)\@=#
 syn match DictResult         #\(_\*_DictResultStart_\*_\)\@<=.*\(_\*_DictResultEnd_\*_\)\@=#
 syn match DictWSecondTitle   #\(_\*_DictNounStart_\*_\)\@<=[a-zA-Z]\{-}\.#
 syn match DictWNounTitle     #\(_\*_DictWebStart_\*_\)\@<=.\{-}：#
