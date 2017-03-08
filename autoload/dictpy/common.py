@@ -54,7 +54,7 @@ def dealComplex(searchResult):
         if 'us-phonetic' in searchResult['basic']:
             cbuf.append(u'美音：_*_DictPhoneticStart_*_[%s]_*_DictPhoneticEnd_*_' % searchResult['basic']['us-phonetic'])
         if 'uk-phonetic' in searchResult['basic']:
-            cbuf.append(u'美音：_*_DictPhoneticStart_*_[%s]_*_DictPhoneticEnd_*_' % searchResult['basic']['uk-phonetic'])
+            cbuf.append(u'英音：_*_DictPhoneticStart_*_[%s]_*_DictPhoneticEnd_*_' % searchResult['basic']['uk-phonetic'])
         cbuf.append('')
     tranlas = ( item for item in enumerate(searchResult['translation']) )
     for eachline in tranlas:
